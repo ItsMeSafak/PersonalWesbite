@@ -7,7 +7,6 @@
 
 body{
     background-color: white;
-    overflow: hidden;
 }
 
 .navigation {
@@ -82,13 +81,13 @@ body{
     padding: 20px;
 }
 
-.block2 span{
+.block2 span, .about-me-block2 span{
     border-bottom: 2px solid #0F9CEC;
     font-size: 40px;
 }
 
 .intro-content{
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +133,80 @@ body{
     background-size: contain;
 }
 
+.about-me{
+    position: relative;
+    height: 90vh;
+}
 
+.about-me-content{
+    position: absolute !important;
+    right: 0;
+    top: 20%;
+    height: 500px;
+}
+
+.about-me-block1, .about-me-block2{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+.about-me-block1{
+    right: 0;
+    top: 0;
+    background-color: #0F9CEC;
+}
+
+.about-me-block2{
+    color: white;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    background-color: #3A3A3A;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .introduction{
+        height: 250px;
+    }
+
+    .block1, .block3{
+        display: none;
+    }
+
+    .block2{
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .block2 > *{
+        margin: 5px;
+    }
+
+    .block2 span{
+        font-size: 26px;
+    }
+
+
+    .block4{
+        left: 50%;
+        transform: translate(-50%, -20%);
+        top: 0;
+        width: 80%;
+        height: 50%;
+        border-radius: 500px;
+        border: 5px solid #3A3A3A;
+    }
+
+
+    .images{
+        right: 0;
+    }
+}
 
 
 @media only screen and (max-width: 500px) {
