@@ -6,7 +6,6 @@ $(document).ready(function(){
 });
 
 function toggleStyle() {
-    console.log("hfujoehfoh");
     dropBtn.classList.toggle('button-drop');
 }
 
